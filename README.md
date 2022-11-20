@@ -55,13 +55,9 @@ Seting up the project
 Running and documentation
 =============
 
-### [127.0.0.1:8000/docs](https://127.0.0.1:8000/docs).
+### [127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
 You can find every API signature and try it out right there with out postman or manually typing in browser
 
-# bk1 
-## bk2
-### bk3
-
-This is an [example link](http://example.com/).
-
+userLevel API is for `Get user level stats` requirement
+gameLevel and gameLevel/country are for `Get game level stats` requirement
