@@ -49,7 +49,7 @@ Seting up the project
 =============
 1. Run `python setup.py` from your terminal.It will download all necessary packages(if something unexpected happens try `pip install -r requirements.txt` )
 2. Script will ask you to enter your postgre credentials.If you mistype something remove `.env` file and run it again.
-3. Script will automatically start server on [127.0.0.1:58929](127.0.0.1:58929).
+3. Script will automatically start server on [127.0.0.1:58929](https://127.0.0.1:58929).
 4. You can also manually start server with `uvicorn main:app --reload`, only first time you need to run setup.py file
 
 Running and documentation
