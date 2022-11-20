@@ -9,7 +9,7 @@ Prerequisites
 
 
 Cleaning and storing data
--------------------
+=============
 ### Parsing
 Parsing data from jsonl files, script will check first if there are desired jsonl files and parse it and save it in database.This way data is parsed only first time when we running our server.When data is parsed jsonl files are moved to backup directory and if we want to parse new data from some other files(or we have new data in same files) we need to put those files in root dir of the project.This way even if we run our server multiple times there won't be necessery trying to store data in db because we have that data already in database.
 
@@ -30,28 +30,34 @@ Parsing data from jsonl files, script will check first if there are desired json
 
 
 `users table`
+
 `user_id(PK) name country device date_of_registration(Date)`
 
 `transactions table`
+
 `user_id(FK) transaction_amount transaction_currency date`
 
 `logins table`
+
 `user_id(FK) login_date`
 
 `exchanges table`
+
 `currency(PK) rate`
 
 Seting up the project
---------------------
-
+=============
+1. Run `python setup.py` from your terminal.It will download all necessary packages(if something unexpected happens try `pip install -r requirements.txt` )
+2. Script will ask you to enter your postgre credentials.If you mistype something remove `.env` file and run it again.
+3. Script will automatically start server on [127.0.0.1:58929](127.0.0.1:58929).
+4. You can also manually start server with `uvicorn main:app --reload`, only first time you need to run setup.py file
 
 Running and documentation
-------------------------
+=============
 
 # bk1 
 ## bk2
 ### bk3
-<h2>  Hi </h2>
 
 This is an [example link](http://example.com/).
 
