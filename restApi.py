@@ -143,6 +143,6 @@ def gameStats(_date: date = None, country = None):
         for stats in numberOfLogins:
             ret['numberOfLogins'][stats[1]] = stats[0]
         for key in revenue:
-            ret['numberOfTrans'][key] = revenue[key][0]
-            ret['revenue'][key] = revenue[key][1]
+            ret['numberOfTrans'][key] = revenue[key][1]
+            ret['revenue'][key] = revenue[key][0]
     return ret

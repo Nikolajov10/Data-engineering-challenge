@@ -20,7 +20,7 @@ async def root():
     return {"message": "Hello World"}
 
 @app.get("/api/userLevel")
-async def getUserLevelStats(user_id:str, date:date=None):
+async def get_user_level_stats(user_id:str, date:date=None):
     ret = API.userStats(user_id, date)
     if not ret:
         return {"message": 'error, wrong user_id or date'}
@@ -28,14 +28,14 @@ async def getUserLevelStats(user_id:str, date:date=None):
 
 
 @app.get("/api/gameLevel")
-async def getGameLevelStats(date:date=None):
+async def get_game_level_stats(date:date=None):
     ret = API.gameStats(date, None)
     if not ret:
         return {"message": 'error, wrong date'}
     return JSONResponse(content=jsonable_encoder(ret))
 
 @app.get("/api/gameLevel/country")
-async def getGameLevelStats(date:date=None):
+async def get_game_level_stats_country(date:date=None):
     ret = API.gameStats(date, True)
     if not ret:
         return {"message": 'error, wrong user_id or date'}
