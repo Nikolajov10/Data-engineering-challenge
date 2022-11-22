@@ -52,11 +52,11 @@ Seting up the project
 3. Script will automatically start server on [127.0.0.1:8000](http://127.0.0.1:8000) (maybe port will be different).
 4. You can also manually start server with `uvicorn main:app --reload`, only first time you need to run setup.py file
 
-When you see this log
-INFO:     Started server process [2828]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-then data parsing is done server is running.
+##### When you see this log 
+INFO:     Started server process [2828]  
+INFO:     Waiting for application startup.  
+INFO:     Application startup complete.  
+then data parsing is done server is running.  
 
 Running and documentation
 =============
